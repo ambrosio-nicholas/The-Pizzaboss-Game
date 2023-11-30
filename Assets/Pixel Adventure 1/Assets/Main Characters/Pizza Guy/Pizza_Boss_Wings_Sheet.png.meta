@@ -1,0 +1,1728 @@
+fileFormatVersion: 2
+guid: 9e22019e61885204d9d503cceb0f1b69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4363794449315371658
+    second: Pizza_Boss_Wings_Sheet_0
+  - first:
+      213: -6863536294492161666
+    second: Pizza_Boss_Wings_Sheet_1
+  - first:
+      213: 1425065943279921210
+    second: Pizza_Boss_Wings_Sheet_2
+  - first:
+      213: 3199456389294575741
+    second: Pizza_Boss_Wings_Sheet_3
+  - first:
+      213: 6527111306018696748
+    second: Pizza_Boss_Wings_Sheet_4
+  - first:
+      213: -5650884938664813908
+    second: Pizza_Boss_Wings_Sheet_5
+  - first:
+      213: 46881920356867150
+    second: Pizza_Boss_Wings_Sheet_6
+  - first:
+      213: 4519405205620982690
+    second: Pizza_Boss_Wings_Sheet_7
+  - first:
+      213: -8823865703895170919
+    second: Pizza_Boss_Wings_Sheet_8
+  - first:
+      213: -2844311056675484289
+    second: Pizza_Boss_Wings_Sheet_9
+  - first:
+      213: -568095464785825343
+    second: Pizza_Boss_Wings_Sheet_10
+  - first:
+      213: -6644696725845451023
+    second: Pizza_Boss_Wings_Sheet_11
+  - first:
+      213: 2999288290195262561
+    second: Pizza_Boss_Wings_Sheet_12
+  - first:
+      213: -6436302108232654922
+    second: Pizza_Boss_Wings_Sheet_13
+  - first:
+      213: 5372813054841936121
+    second: Pizza_Boss_Wings_Sheet_14
+  - first:
+      213: 424556084643874557
+    second: Pizza_Boss_Wings_Sheet_15
+  - first:
+      213: 7840110422628369501
+    second: Pizza_Boss_Wings_Sheet_16
+  - first:
+      213: 1219853718505812398
+    second: Pizza_Boss_Wings_Sheet_17
+  - first:
+      213: 3524297639752479339
+    second: Pizza_Boss_Wings_Sheet_18
+  - first:
+      213: 7546919950157594295
+    second: Pizza_Boss_Wings_Sheet_19
+  - first:
+      213: 2490388950632733034
+    second: Pizza_Boss_Wings_Sheet_20
+  - first:
+      213: 4866998231681589283
+    second: Pizza_Boss_Wings_Sheet_21
+  - first:
+      213: -1207808844398835098
+    second: Pizza_Boss_Wings_Sheet_22
+  - first:
+      213: 6405158990521063102
+    second: Pizza_Boss_Wings_Sheet_23
+  - first:
+      213: 2816390856742141581
+    second: Pizza_Boss_Wings_Sheet_24
+  - first:
+      213: -7698294725436147538
+    second: Pizza_Boss_Wings_Sheet_25
+  - first:
+      213: -4463511816466982310
+    second: Pizza_Boss_Wings_Sheet_26
+  - first:
+      213: -641471663199970792
+    second: Pizza_Boss_Wings_Sheet_27
+  - first:
+      213: -8012799947612048724
+    second: Pizza_Boss_Wings_Sheet_28
+  - first:
+      213: 7428238831132186206
+    second: Pizza_Boss_Wings_Sheet_29
+  - first:
+      213: 6640925261357782863
+    second: Pizza_Boss_Wings_Sheet_30
+  - first:
+      213: -170583250283936119
+    second: Pizza_Boss_Wings_Sheet_31
+  - first:
+      213: -7310022576637780197
+    second: Pizza_Boss_Wings_Sheet_32
+  - first:
+      213: -2371856005827720681
+    second: Pizza_Boss_Wings_Sheet_33
+  - first:
+      213: -1169623119606158584
+    second: Pizza_Boss_Wings_Sheet_34
+  - first:
+      213: -1167281301148867886
+    second: Pizza_Boss_Wings_Sheet_35
+  - first:
+      213: -5640895687696102077
+    second: Pizza_Boss_Wings_Sheet_36
+  - first:
+      213: -6217127305731267010
+    second: Pizza_Boss_Wings_Sheet_37
+  - first:
+      213: 2373314117284846029
+    second: Pizza_Boss_Wings_Sheet_38
+  - first:
+      213: 6228188883377731719
+    second: Pizza_Boss_Wings_Sheet_39
+  - first:
+      213: -2543858054890699888
+    second: Pizza_Boss_Wings_Sheet_40
+  - first:
+      213: -1311382585694297569
+    second: Pizza_Boss_Wings_Sheet_41
+  - first:
+      213: 8319585710139169784
+    second: Pizza_Boss_Wings_Sheet_42
+  - first:
+      213: 3646555445293461739
+    second: Pizza_Boss_Wings_Sheet_43
+  - first:
+      213: 1124716724060357058
+    second: Pizza_Boss_Wings_Sheet_44
+  - first:
+      213: 1175781036459229166
+    second: Pizza_Boss_Wings_Sheet_45
+  - first:
+      213: -1103437710428668873
+    second: Pizza_Boss_Wings_Sheet_46
+  - first:
+      213: -5166708737891526863
+    second: Pizza_Boss_Wings_Sheet_47
+  - first:
+      213: -4615121704607764815
+    second: Pizza_Boss_Wings_Sheet_48
+  - first:
+      213: -911566282053695657
+    second: Pizza_Boss_Wings_Sheet_49
+  - first:
+      213: -98686186933046600
+    second: Pizza_Boss_Wings_Sheet_50
+  - first:
+      213: -700742924425060934
+    second: Pizza_Boss_Wings_Sheet_51
+  - first:
+      213: 5863764683950705209
+    second: Pizza_Boss_Wings_Sheet_52
+  - first:
+      213: 9100105140625716595
+    second: Pizza_Boss_Wings_Sheet_53
+  - first:
+      213: -7898012941581069535
+    second: Pizza_Boss_Wings_Sheet_54
+  - first:
+      213: -7454380207413230131
+    second: Pizza_Boss_Wings_Sheet_55
+  - first:
+      213: 9156077502597819295
+    second: Pizza_Boss_Wings_Sheet_56
+  - first:
+      213: 4242783509549043169
+    second: Pizza_Boss_Wings_Sheet_57
+  - first:
+      213: -2545767772456711027
+    second: Pizza_Boss_Wings_Sheet_58
+  - first:
+      213: 5569501660421568989
+    second: Pizza_Boss_Wings_Sheet_59
+  - first:
+      213: -4744926351791802079
+    second: Pizza_Boss_Wings_Sheet_60
+  - first:
+      213: -7192288385733083096
+    second: Pizza_Boss_Wings_Sheet_61
+  - first:
+      213: -4526092490962626145
+    second: Pizza_Boss_Wings_Sheet_62
+  - first:
+      213: -7974027950510302326
+    second: Pizza_Boss_Wings_Sheet_63
+  - first:
+      213: 5648802061322183362
+    second: Pizza_Boss_Wings_Sheet_64
+  - first:
+      213: -6203139580361458083
+    second: Pizza_Boss_Wings_Sheet_65
+  - first:
+      213: 4997193991949756498
+    second: Pizza_Boss_Wings_Sheet_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6756cb79110b073c0800000000000000
+      internalID: -4363794449315371658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e793bcfca12dfb0a0800000000000000
+      internalID: -6863536294492161666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38e4b2dce9d6c310800000000000000
+      internalID: 1425065943279921210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70d14672a0c66c20800000000000000
+      internalID: 3199456389294575741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e2ea49625f49a50800000000000000
+      internalID: 6527111306018696748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa574486160491b0800000000000000
+      internalID: -5650884938664813908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c5241bbde86a000800000000000000
+      internalID: 46881920356867150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a30715f61728be30800000000000000
+      internalID: 4519405205620982690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9908395a4e45b8580800000000000000
+      internalID: -8823865703895170919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d442ce92af688d0800000000000000
+      internalID: -2844311056675484289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c13ee64f28bd18f0800000000000000
+      internalID: -568095464785825343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fed7cf688b49c3a0800000000000000
+      internalID: -6644696725845451023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cc31c1fcc9f9920800000000000000
+      internalID: 2999288290195262561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfd1b36559ada6a0800000000000000
+      internalID: -6436302108232654922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f85f6ac101109a40800000000000000
+      internalID: 5372813054841936121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6cd64728354e500800000000000000
+      internalID: 424556084643874557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d540a9404eaadcc60800000000000000
+      internalID: 7840110422628369501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea17a717e7acde010800000000000000
+      internalID: 1219853718505812398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62b134e702d8e030800000000000000
+      internalID: 3524297639752479339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7beb37995bb0cb860800000000000000
+      internalID: 7546919950157594295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6995035e83af8220800000000000000
+      internalID: 2490388950632733034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320e5d1fa1d0b8340800000000000000
+      internalID: 4866998231681589283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a480951400d3fe0800000000000000
+      internalID: -1207808844398835098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb658e77a22b3e850800000000000000
+      internalID: 6405158990521063102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ef5c4ff84d51720800000000000000
+      internalID: 2816390856742141581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea87d1a0cb92a2590800000000000000
+      internalID: -7698294725436147538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a1ab0d6ab6e02c0800000000000000
+      internalID: -4463511816466982310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a9c75cbe80917f0800000000000000
+      internalID: -641471663199970792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2b05ab6e0dcc090800000000000000
+      internalID: -8012799947612048724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5695644cd7661760800000000000000
+      internalID: 7428238831132186206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47162f075e492c50800000000000000
+      internalID: 6640925261357782863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986c13a0077f1adf0800000000000000
+      internalID: -170583250283936119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f5b6b52359d8a90800000000000000
+      internalID: -7310022576637780197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a03428789751fd0800000000000000
+      internalID: -2371856005827720681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b6aca38f9a4cfe0800000000000000
+      internalID: -1169623119606158584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2e01457dbfccfe0800000000000000
+      internalID: -1167281301148867886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d47df324387b1b0800000000000000
+      internalID: -5640895687696102077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36a18ab7a358b9a0800000000000000
+      internalID: -6217127305731267010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9de258d94bfe020800000000000000
+      internalID: 2373314117284846029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78834c38ac8fe6650800000000000000
+      internalID: 6228188883377731719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0934937b39662bcd0800000000000000
+      internalID: -2543858054890699888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12ee0f7c780dcde0800000000000000
+      internalID: -1311382585694297569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbd243df1b157370800000000000000
+      internalID: 8319585710139169784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0bb727bda2b9230800000000000000
+      internalID: 3646555445293461739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c10f8ac6ebcb9f00800000000000000
+      internalID: 1124716724060357058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeffac38f96315010800000000000000
+      internalID: 1175781036459229166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cf026af3dcfa0f0800000000000000
+      internalID: -1103437710428668873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137911cf6c92c48b0800000000000000
+      internalID: -5166708737891526863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bea8a9f24bc3ffb0800000000000000
+      internalID: -4615121704607764815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75747f0db477953f0800000000000000
+      internalID: -911566282053695657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b23e939f6561aef0800000000000000
+      internalID: -98686186933046600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd96ced5067646f0800000000000000
+      internalID: -700742924425060934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93acc5999e6406150800000000000000
+      internalID: 5863764683950705209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375b3b539611a4e70800000000000000
+      internalID: 9100105140625716595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1235f99331f946290800000000000000
+      internalID: -7898012941581069535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc58e6442b8bc8890800000000000000
+      internalID: -7454380207413230131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9be9464afbe01f70800000000000000
+      internalID: 9156077502597819295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed4e896f1561ea30800000000000000
+      internalID: 4242783509549043169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c8412f2bd9bacd0800000000000000
+      internalID: -2545767772456711027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9306d6048da4d40800000000000000
+      internalID: 5569501660421568989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1293f0c6f92a62eb0800000000000000
+      internalID: -4744926351791802079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820463ec1dbdf2c90800000000000000
+      internalID: -7192288385733083096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f991c971cd61031c0800000000000000
+      internalID: -4526092490962626145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b1cc4c3df865190800000000000000
+      internalID: -7974027950510302326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c26a9fcb83946e40800000000000000
+      internalID: 5648802061322183362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5eb364da650ae9a0800000000000000
+      internalID: -6203139580361458083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pizza_Boss_Wings_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 0
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258a1eb9579995540800000000000000
+      internalID: 4997193991949756498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
