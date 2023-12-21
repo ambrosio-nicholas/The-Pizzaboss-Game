@@ -12,6 +12,7 @@ public class Finish : MonoBehaviour
     private CinemachineVirtualCamera finishCam;
 
     private AudioSource finishSound;
+    private AudioSource backgroundMusic;
     private Rigidbody2D rb;
     private Animator transitionAnim;
     private Animator playerAnimation;
@@ -19,6 +20,7 @@ public class Finish : MonoBehaviour
     private void Start()
     {
         finishSound = GetComponent<AudioSource>();
+        backgroundMusic = GameObject.FindWithTag("BackgroundMusic").GetComponent<AudioSource>();
         rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         transitionAnim = GameObject.FindWithTag("Transition").GetComponent<Animator>();
         playerAnimation = GameObject.FindWithTag("Player").GetComponent<Animator>();
@@ -51,6 +53,7 @@ public class Finish : MonoBehaviour
 
     private void FinishLevel()
     {
+        backgroundMusic.Stop();
         finishSound.Play();
         playerCam.Priority = 1;
         finishCam.Priority = 10;
