@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingDuration = 0.4f;
+    private float wallJumpingDuration = .4f;
     private float timeAfterWallJump;
     private Vector2 wallJumpingPower = new Vector2(7f, 14f);
     private float offWallCounter;
@@ -54,13 +54,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (hasControl && PauseMenu.GameIsPaused == false)
+        if (hasControl && PauseMenu.GameIsPaused == false && !isWallJumping)
         {
-            if (!isWallJumping)
-            {
                 dirX = Input.GetAxisRaw("Horizontal");
                 rb.velocity = new Vector2(dirX * MoveSpeed, rb.velocity.y);
-            }
         }
     }
 
@@ -93,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && coyoteTimeCounter > 0f && rb.bodyType == RigidbodyType2D.Dynamic)
         {
             jumpSoundEffect.Play();
-            rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
+            rb.velocity = rb.velocity + new Vector2(rb.velocity.x, jumpStrength);
             isJumping = true;
             jumpTimeCounter = jumpTime;
         }
@@ -142,16 +139,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (IsWalled() && !IsGrounded() && !isWallJumping && dirX !=0f) 
         {
-            timeAfterWallJump = 1f;
+            timeAfterWallJump = 1;
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
             offWallCounter = .3f;
-
-            CancelInvoke("StopWallJumping");
         }
         else
         {
             isWallSliding = false;
+  
             offWallCounter -= Time.deltaTime;
         }
     }
@@ -167,6 +163,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x + (wallJumpingDirection * wallJumpingPower.x), wallJumpingPower.y);
+            timeAfterWallJump = 0;
             timeAfterWallJump += Time.deltaTime;
             isWallJumping = true;
         }
