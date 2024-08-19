@@ -17,16 +17,15 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingDuration = .4f;
+    private float wallJumpingDuration = .5f;
     private float timeAfterWallJump;
-    private Vector2 wallJumpingPower = new Vector2(7f, 14f);
+    private Vector2 wallJumpingPower = new Vector2(10.5f, 13f);
     private float offWallCounter;
 
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float jumpStrength = 10f;
     [SerializeField] private float jumpTime;
     [SerializeField] private float MoveSpeed = 8f;
-    [SerializeField] private float AirMoveSpeed = 3f;
     [SerializeField] private float fallGravity = 4.75f;
     [SerializeField] private float normalGravity = 3.5f;
     [SerializeField] private Transform wallCheckRight;
@@ -137,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
             sprintCounter += Time.deltaTime;
             MoveSpeed = 11f;
         }
-        else if(Input.GetKeyUp(KeyCode.LeftShift))
+        else if(Input.GetKeyUp(KeyCode.LeftShift) || isWallSliding || rb.velocity.x < 5f)
         {
             sprintCounter = 0;
             MoveSpeed = 8f;
@@ -151,12 +150,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void WallSlide()
     {
-        if (IsWalled() && !IsGrounded() && !isWallJumping && dirX !=0f) 
+        if (IsWalled() && !IsGrounded() && !isWallJumping && dirX !=0f && (rb.velocity.x <= 1f && rb.velocity.x >= -1f)) 
         {
             timeAfterWallJump = 1;
+            wallJumpingDirection = -dirX;
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
-            offWallCounter = .3f;
+            offWallCounter = .4f;
         }
         else
         {
@@ -168,11 +168,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void WallJump()
     {
-        if (isWallSliding)
-        { 
-            CancelInvoke("StopWallJumping");
-        }
-
         if (Input.GetButtonDown("Jump") && timeAfterWallJump > wallJumpingDuration && offWallCounter > 0 && !IsGrounded() && !isWallJumping) 
         {
             jumpSoundEffect.Play();
@@ -192,7 +187,14 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsWalled()
     {
-        return Physics2D.OverlapCircle(wallCheckRight.position, 0.2f, wallLayer) || Physics2D.OverlapCircle(wallCheckLeft.position, 0.2f, wallLayer);
+        if (dirX > 0)
+        {
+            return Physics2D.OverlapCircle(wallCheckRight.position, 0.2f, wallLayer);
+        } 
+        else
+        {
+            return Physics2D.OverlapCircle(wallCheckLeft.position, 0.2f, wallLayer);
+        }
     }
 
     public bool IsGrounded() // Checking groiund before jumping
@@ -215,13 +217,11 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.running;
             sprite.flipX = false;
-            wallJumpingDirection = -transform.localScale.x;
         }
         else if (dirX < 0f)
         {
             state = MovementState.running;
             sprite.flipX = true;
-            wallJumpingDirection = transform.localScale.x;
         }
         else
         {
@@ -241,7 +241,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.falling;
         }
 
-        if (isWallSliding && rb.velocity.y < 1f)
+        if (isWallSliding && rb.velocity.y < 1.5f)
         {
             state = MovementState.wallSlide;
         }
