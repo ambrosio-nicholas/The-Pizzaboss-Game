@@ -25,8 +25,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float jumpStrength = 10f;
     [SerializeField] private float jumpTime;
-    [SerializeField] private float MoveSpeed = 6f;
-    [SerializeField] private float fallGravity = 4.5f;
+    [SerializeField] private float MoveSpeed = 8f;
+    [SerializeField] private float AirMoveSpeed = 3f;
+    [SerializeField] private float fallGravity = 4.75f;
     [SerializeField] private float normalGravity = 3.5f;
     [SerializeField] private Transform wallCheckRight;
     [SerializeField] private Transform wallCheckLeft;
@@ -54,10 +55,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (hasControl && PauseMenu.GameIsPaused == false && !isWallJumping)
+        if (hasControl && PauseMenu.GameIsPaused == false && !isWallJumping && IsGrounded())
         {
-                dirX = Input.GetAxisRaw("Horizontal");
-                rb.velocity = new Vector2(dirX * MoveSpeed, rb.velocity.y);
+                dirX = Input.GetAxis("Horizontal");
+                rb.velocity = new Vector2(dirX * MoveSpeed , rb.velocity.y);
+        }
+        else if (!IsGrounded())
+        {
+            dirX = Input.GetAxis("Horizontal");
+            if (Mathf.Abs((rb.velocity.x)) <= MoveSpeed)
+            {
+                rb.velocity += new Vector2(dirX * 3 * MoveSpeed * Time.deltaTime, 0);
+            }
+            else
+            {
+                dirX = rb.velocity.x / Mathf.Abs(rb.velocity.x); //Returns the direction player is currently traveling as -1 or 1
+                rb.velocity = new Vector2(MoveSpeed * dirX, rb.velocity.y);
+            }
         }
     }
 
@@ -87,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump() // What affects the jump
     {
-        if (Input.GetButtonDown("Jump") && coyoteTimeCounter > 0f && rb.bodyType == RigidbodyType2D.Dynamic)
+        if (Input.GetButtonDown("Jump") && coyoteTimeCounter > 0f && rb.bodyType == RigidbodyType2D.Dynamic && !isWallSliding)
         {
             jumpSoundEffect.Play();
             rb.velocity = rb.velocity + new Vector2(rb.velocity.x, jumpStrength);
@@ -118,20 +132,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > 0.5f)
+        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > 7.9f && IsGrounded())
         {
             sprintCounter += Time.deltaTime;
-            MoveSpeed = 8f;
+            MoveSpeed = 11f;
         }
-        else
+        else if(Input.GetKeyUp(KeyCode.LeftShift))
         {
             sprintCounter = 0;
-            MoveSpeed = 6f;
+            MoveSpeed = 8f;
         }
 
         if (Input.GetKey(KeyCode.LeftShift) && sprintCounter > holdDownTime)
         {
-            MoveSpeed = 9f;
+            MoveSpeed = 12f;
         }
     }
 
