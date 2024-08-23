@@ -16,6 +16,7 @@ public class Finish : MonoBehaviour
     private Rigidbody2D rb;
     private Animator transitionAnim;
     private Animator playerAnimation;
+    private bool audioFade = false;
 
     private void Start()
     {
@@ -53,13 +54,21 @@ public class Finish : MonoBehaviour
 
     private void FinishLevel()
     {
-        backgroundMusic.Stop();
+        audioFade = true;
         finishSound.Play();
         playerCam.Priority = 1;
         finishCam.Priority = 10;
         levelCompleted = true;
         playerAnimation.SetTrigger("finnish");
         rb.velocity = new Vector2(0, 0);        
+    }
+
+    private void Update()
+    {
+        if(audioFade == true && backgroundMusic.volume > 0.05f)
+        {
+            backgroundMusic.volume -= Time.deltaTime;
+        }
     }
 
     private void Fly()
