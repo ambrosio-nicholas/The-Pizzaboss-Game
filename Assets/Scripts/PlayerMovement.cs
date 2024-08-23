@@ -256,13 +256,13 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.wallSlide;
         }
 
-        if (bigTurnAround && dirX > 0)
+        if (bigTurnAround && dirX > 0 && IsGrounded())
         {
             state = MovementState.sliding;
             sprite.flipX = true;
         }
 
-        if (bigTurnAround && dirX < 0)
+        if (bigTurnAround && dirX < 0 && IsGrounded())
         {
             state = MovementState.sliding;
             sprite.flipX = false;
