@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator anim;
 
@@ -17,20 +16,24 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingDuration = .5f;
+    private float wallJumpingDuration = 0.5f;
     private float timeAfterWallJump;
-    private Vector2 wallJumpingPower = new Vector2(10.5f, 13f);
+    private Vector2 wallJumpingPower = new Vector2(8f, 11f);
     private float offWallCounter;
 
     [SerializeField] private LayerMask jumpableGround;
-    [SerializeField] private float jumpStrength = 10f;
-    [SerializeField] private float jumpTime;
-    [SerializeField] private float MoveSpeed = 8f;
-    [SerializeField] private float fallGravity = 4.75f;
-    [SerializeField] private float normalGravity = 3.5f;
+    [SerializeField] private Transform groundCheck;
     [SerializeField] private Transform wallCheckRight;
     [SerializeField] private Transform wallCheckLeft;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private float jumpTime = 0.2f;
+    private float jumpStrength = 10f;
+    private float MoveSpeed = 8f;
+    private float WalkSpeed = 8f;
+    private float RunSpeed = 11f;
+    private float SprintSpeed = 12f;
+    private float fallGravity = 4.75f;
+    private float normalGravity = 3.5f;
 
     private float jumpTimeCounter;
     private float coyoteTimeCounter;
@@ -39,32 +42,42 @@ public class PlayerMovement : MonoBehaviour
 
     private float sprintCounter;
     private float holdDownTime = 2f;
+    private bool bigTurnAround = false;
 
-    private enum MovementState { idle, running, jumping, falling , wallSlide }
+    private enum MovementState { idle, running, jumping, falling , wallSlide , sliding }
 
     [SerializeField] private AudioSource jumpSoundEffect;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
-        if (hasControl && PauseMenu.GameIsPaused == false && !isWallJumping && IsGrounded())
+        if (hasControl && !PauseMenu.GameIsPaused && !isWallJumping && IsGrounded()) //Movement on the ground
         {
+            dirX = Input.GetAxisRaw("Horizontal"); //Adds "drift" when turning back quickly
+            if (((dirX > 0 && rb.velocity.x < 0) || (dirX < 0 && rb.velocity.x > 0)) && MoveSpeed > WalkSpeed)
+            {
+                rb.velocity += new Vector2(dirX * 2 * MoveSpeed * Time.deltaTime, 0);
+                bigTurnAround = true;
+            }
+            else
+            {
                 dirX = Input.GetAxis("Horizontal");
-                rb.velocity = new Vector2(dirX * MoveSpeed , rb.velocity.y);
+                rb.velocity = new Vector2(dirX * MoveSpeed, rb.velocity.y);
+                bigTurnAround = false;
+            }
         }
-        else if (!IsGrounded())
+        else if (hasControl && !PauseMenu.GameIsPaused && !IsGrounded()) //Movement in the air
         {
             dirX = Input.GetAxis("Horizontal");
             if (Mathf.Abs((rb.velocity.x)) <= MoveSpeed)
             {
-                rb.velocity += new Vector2(dirX * 3 * MoveSpeed * Time.deltaTime, 0);
+                rb.velocity += new Vector2(dirX * 4 * MoveSpeed * Time.deltaTime, 0);
             }
             else
             {
@@ -87,7 +100,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 coyoteTimeCounter -= Time.deltaTime;
             }
-
 
             Jump();
             Sprint();
@@ -122,7 +134,6 @@ public class PlayerMovement : MonoBehaviour
                 coyoteTimeCounter = 0f;
             }
         }
-
         if (Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;
@@ -131,20 +142,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > 7.9f && IsGrounded())
+        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > WalkSpeed - 0.1f && IsGrounded())
         {
             sprintCounter += Time.deltaTime;
-            MoveSpeed = 11f;
+            MoveSpeed = RunSpeed;
         }
-        else if(Input.GetKeyUp(KeyCode.LeftShift) || isWallSliding || rb.velocity.x < 5f)
+        else if(((Input.GetKeyUp(KeyCode.LeftShift) && IsGrounded()) || isWallSliding || Mathf.Abs(rb.velocity.x) < 5f || bigTurnAround) && !isWallJumping)
         {
             sprintCounter = 0;
-            MoveSpeed = 8f;
+            MoveSpeed = WalkSpeed;
         }
-
-        if (Input.GetKey(KeyCode.LeftShift) && sprintCounter > holdDownTime)
+        if (Input.GetKey(KeyCode.LeftShift) && sprintCounter > holdDownTime && IsGrounded())
         {
-            MoveSpeed = 12f;
+            MoveSpeed = SprintSpeed;
         }
     }
 
@@ -199,7 +209,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsGrounded() // Checking groiund before jumping
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, jumpableGround);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -244,6 +254,18 @@ public class PlayerMovement : MonoBehaviour
         if (isWallSliding && rb.velocity.y < 1.5f)
         {
             state = MovementState.wallSlide;
+        }
+
+        if (bigTurnAround && dirX > 0)
+        {
+            state = MovementState.sliding;
+            sprite.flipX = true;
+        }
+
+        if (bigTurnAround && dirX < 0)
+        {
+            state = MovementState.sliding;
+            sprite.flipX = false;
         }
 
         anim.SetInteger("state", (int)state);
