@@ -51,14 +51,27 @@ public class PlayerLife : MonoBehaviour
     {
         Health = Health - 1;
         hurtSoundEffect.Play();
-        anim.SetTrigger("hurt");
+        //anim.SetTrigger("hurt");
         Invincibility = true;
         healthBarAnim.SetInteger("state", (int)Health);
+        StartCoroutine(HurtEffect());
     }
 
-    private void EndInvincibility()  // Being called by Hurt animation
+    private IEnumerator HurtEffect()
     {
+        float timePassed = 0;
+        float duration = 1.4f;
+        while (timePassed < duration)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Vector4(1, 0.7f, 0.8f, 0.9f);
+            yield return new WaitForSecondsRealtime(0.2f);
+            timePassed += 0.2f;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            yield return new WaitForSecondsRealtime(0.2f);
+            timePassed += 0.2f;
+        }
         Invincibility = false;
+        gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     private void Die()

@@ -12,13 +12,13 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
 
     private bool isWallSliding;
-    private float wallSlidingSpeed = 3f;
+    private float wallSlidingSpeed = 4f;
 
     private bool isWallJumping;
     private float wallJumpingDirection;
     private float wallJumpingDuration = 0.5f;
     private float timeAfterWallJump;
-    private Vector2 wallJumpingPower = new Vector2(8f, 11f);
+    private Vector2 wallJumpingPower = new Vector2(11f, 13f);
     private float offWallCounter;
 
     [SerializeField] private LayerMask jumpableGround;
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (hasControl && !PauseMenu.GameIsPaused && !isWallJumping && IsGrounded()) //Movement on the ground
+        if (hasControl && !PauseMenu.GameIsPaused && IsGrounded()) //Movement on the ground
         {
             dirX = Input.GetAxisRaw("Horizontal"); //Adds "drift" when turning back quickly
             if (((dirX > 0 && rb.velocity.x < 0) || (dirX < 0 && rb.velocity.x > 0)) && MoveSpeed > WalkSpeed)
@@ -75,9 +75,13 @@ public class PlayerMovement : MonoBehaviour
         else if (hasControl && !PauseMenu.GameIsPaused && !IsGrounded()) //Movement in the air
         {
             dirX = Input.GetAxis("Horizontal");
-            if (Mathf.Abs((rb.velocity.x)) <= MoveSpeed)
+            if (Mathf.Abs((rb.velocity.x)) <= MoveSpeed && !isWallJumping)
             {
-                rb.velocity += new Vector2(dirX * 4 * MoveSpeed * Time.deltaTime, 0);
+                rb.velocity += new Vector2(dirX * 5.5f * MoveSpeed * Time.deltaTime, 0);
+            }
+            else if (Mathf.Abs((rb.velocity.x)) <= MoveSpeed && isWallJumping) //Movement when WallJumping
+            {
+                rb.velocity += new Vector2(dirX * 2.75f * MoveSpeed * Time.deltaTime, 0);
             }
             else
             {
@@ -95,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
             if (IsGrounded())
             {
                 coyoteTimeCounter = coyoteTime;
+                isWallJumping = false;
             }
             else
             {
@@ -142,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > WalkSpeed - 0.1f && IsGrounded())
+        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > WalkSpeed - 0.1f && IsGrounded() && !isWallJumping)
         {
             sprintCounter += Time.deltaTime;
             MoveSpeed = RunSpeed;
@@ -156,17 +161,22 @@ public class PlayerMovement : MonoBehaviour
         {
             MoveSpeed = SprintSpeed;
         }
+        if (isWallJumping)
+        {
+            MoveSpeed = wallJumpingPower.x;
+        }
     }
 
     private void WallSlide()
     {
-        if (IsWalled() && !IsGrounded() && !isWallJumping && dirX !=0f && (rb.velocity.x <= 1f && rb.velocity.x >= -1f)) 
+        if (IsWalled() && !IsGrounded() && dirX !=0f && (rb.velocity.x <= 1f && rb.velocity.x >= -1f)) 
         {
             timeAfterWallJump = 1;
             wallJumpingDirection = -dirX;
             isWallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
             offWallCounter = .4f;
+            isWallJumping = false;
         }
         else
         {
@@ -186,13 +196,6 @@ public class PlayerMovement : MonoBehaviour
             timeAfterWallJump += Time.deltaTime;
             isWallJumping = true;
         }
-
-        Invoke("StopWallJumping", wallJumpingDuration);
-    }
-
-    private void StopWallJumping()
-    {
-        isWallJumping = false;
     }
 
     private bool IsWalled()
