@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 21adac71878aa594b85ed30434924038
+guid: cdc9b1422540034439524cf9df7dc418
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4715080798908222938
-    second: Pizza_Boss_Running_360x360_0
+      213: -6607481912129624618
+    second: Fireball_0
   - first:
-      213: 3452942131407413430
-    second: Pizza_Boss_Running_360x360_1
+      213: -7250195882505504687
+    second: Fireball_1
   - first:
-      213: 593613627784527259
-    second: Pizza_Boss_Running_360x360_2
+      213: 4403933487624526528
+    second: Fireball_2
   - first:
-      213: -3246360197962678313
-    second: Pizza_Boss_Running_360x360_3
+      213: 8927358698389672400
+    second: Fireball_3
+  - first:
+      213: 2250600637640065238
+    second: Fireball_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_0
+      name: Fireball_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 360
-        height: 360
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6227fc5befaa09eb0800000000000000
-      internalID: -4715080798908222938
+      spriteID: 6d5e1b775328d44a0800000000000000
+      internalID: -6607481912129624618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_1
+      name: Fireball_1
       rect:
         serializedVersion: 2
-        x: 360
+        x: 16
         y: 0
-        width: 360
-        height: 360
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b0e484f2905bef20800000000000000
-      internalID: 3452942131407413430
+      spriteID: 158724f0241226b90800000000000000
+      internalID: -7250195882505504687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_2
+      name: Fireball_2
       rect:
         serializedVersion: 2
-        x: 720
+        x: 32
         y: 0
-        width: 360
-        height: 360
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d7de90370fc3800800000000000000
-      internalID: 593613627784527259
+      spriteID: 0ca9e488c2aed1d30800000000000000
+      internalID: 4403933487624526528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_3
+      name: Fireball_3
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 48
         y: 0
-        width: 360
-        height: 360
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +195,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dfb773999c92f2d0800000000000000
-      internalID: -3246360197962678313
+      spriteID: 0d19200ef6954eb70800000000000000
+      internalID: 8927358698389672400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0cdc11b5dbb3f10800000000000000
+      internalID: 2250600637640065238
       vertices: []
       indices: 
       edges: []

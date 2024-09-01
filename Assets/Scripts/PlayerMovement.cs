@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
+    private BoxCollider2D collider;
 
     private bool hasControl = true;
     private float dirX = 0f;
@@ -44,7 +45,14 @@ public class PlayerMovement : MonoBehaviour
     private float holdDownTime = 2f;
     private bool bigTurnAround = false;
 
-    private enum MovementState { idle, running, jumping, falling , wallSlide , sliding }
+    private bool isCrouching = false;
+    private float friciton = 8f;
+    private Vector2 bigSizeOffset = new Vector2(-0.03f, -0.086f);
+    private Vector2 bigSizeSize = new Vector2(0.964f, 1.969f);
+    private Vector2 smallSizeOffset = new Vector2(-0.03f, -0.02f);
+    private Vector2 smallSizeSize = new Vector2(0.964f, 0.98f);
+
+    private enum MovementState { idle, running, jumping, falling , wallSlide , sliding , crouching }
 
     [SerializeField] private AudioSource jumpSoundEffect;
 
@@ -53,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        collider = GetComponent<BoxCollider2D>();
     }
 
     private void FixedUpdate()
@@ -60,12 +69,31 @@ public class PlayerMovement : MonoBehaviour
         if (hasControl && !PauseMenu.GameIsPaused && IsGrounded()) //Movement on the ground
         {
             dirX = Input.GetAxisRaw("Horizontal"); //Adds "drift" when turning back quickly
-            if (((dirX > 0 && rb.velocity.x < 0) || (dirX < 0 && rb.velocity.x > 0)) && MoveSpeed > WalkSpeed)
+            if (((dirX > 0 && rb.velocity.x < 0) || (dirX < 0 && rb.velocity.x > 0)) && MoveSpeed > WalkSpeed && !isCrouching)
             {
                 rb.velocity += new Vector2(dirX * 2 * MoveSpeed * Time.deltaTime, 0);
                 bigTurnAround = true;
             }
-            else
+            else if (isCrouching) //Crouching movement
+            {
+                if (rb.velocity.x > 0.2f)
+                {
+                    rb.velocity -= new Vector2(Time.deltaTime * friciton, 0f);
+                }
+                else if (rb.velocity.x < -0.2f)
+                {
+                    rb.velocity += new Vector2(Time.deltaTime * friciton, 0f);
+                }
+                else if (Mathf.Abs(rb.velocity.x) <= 0.2f) //Makes sure you stop when crouching
+                {
+                    rb.velocity = new Vector2(0, rb.velocity.y);
+                }
+                else if (Mathf.Abs(rb.velocity.x) > MoveSpeed) //Limits max speed
+                {
+                     rb.velocity = new Vector2(MoveSpeed, rb.velocity.y);
+                }
+            }
+            else //Normal Running
             {
                 dirX = Input.GetAxis("Horizontal");
                 rb.velocity = new Vector2(dirX * MoveSpeed, rb.velocity.y);
@@ -108,9 +136,9 @@ public class PlayerMovement : MonoBehaviour
 
             Jump();
             Sprint();
+            Crouch();
             WallSlide();
             WallJump();
-
             UpdateAnimationState();
         }
     }
@@ -120,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && coyoteTimeCounter > 0f && rb.bodyType == RigidbodyType2D.Dynamic && !isWallSliding)
         {
             jumpSoundEffect.Play();
-            rb.velocity = rb.velocity + new Vector2(rb.velocity.x, jumpStrength);
+            rb.velocity += new Vector2(rb.velocity.x, jumpStrength);
             isJumping = true;
             jumpTimeCounter = jumpTime;
         }
@@ -167,9 +195,27 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void Crouch()
+    {
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && !isWallSliding)
+        {
+            collider.size = smallSizeSize;
+            collider.offset = smallSizeOffset;
+            isCrouching = true;
+            gameObject.transform.GetChild(2).transform.localPosition = new Vector2(0f, -0.5f); //Moves the GroundCheck object to correspond with the new collider
+        }
+        else
+        {
+            collider.offset = bigSizeOffset;
+            collider.size = bigSizeSize;
+            isCrouching = false;
+            gameObject.transform.GetChild(2).transform.localPosition = new Vector2(0f, -1.16f); //Moves the GroundCheck object to correspond with the new collider
+        }
+    }
+
     private void WallSlide()
     {
-        if (IsWalled() && !IsGrounded() && dirX !=0f && (rb.velocity.x <= 1f && rb.velocity.x >= -1f)) 
+        if (IsWalled() && !IsGrounded() && dirX !=0f && (rb.velocity.x <= 1f && rb.velocity.x >= -1f) && !isCrouching) 
         {
             timeAfterWallJump = 1;
             wallJumpingDirection = -dirX;
@@ -269,6 +315,11 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.sliding;
             sprite.flipX = false;
+        }
+
+        if (isCrouching)
+        {
+            state = MovementState.crouching;
         }
 
         anim.SetInteger("state", (int)state);

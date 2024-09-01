@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 21adac71878aa594b85ed30434924038
+guid: 516956a5d8202ba459f0e798c690a986
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4715080798908222938
-    second: Pizza_Boss_Running_360x360_0
+      213: 2001341015620166462
+    second: Fireball_Small_0
   - first:
-      213: 3452942131407413430
-    second: Pizza_Boss_Running_360x360_1
+      213: -5633294477616653429
+    second: Fireball_Small_1
   - first:
-      213: 593613627784527259
-    second: Pizza_Boss_Running_360x360_2
+      213: -307874937481858623
+    second: Fireball_Small_2
   - first:
-      213: -3246360197962678313
-    second: Pizza_Boss_Running_360x360_3
+      213: 2693786811748278434
+    second: Fireball_Small_3
+  - first:
+      213: -8709631243242326717
+    second: Fireball_Small_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_0
+      name: Fireball_Small_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 360
-        height: 360
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6227fc5befaa09eb0800000000000000
-      internalID: -4715080798908222938
+      spriteID: e33a576dc0136cb10800000000000000
+      internalID: 2001341015620166462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_1
+      name: Fireball_Small_1
       rect:
         serializedVersion: 2
-        x: 360
+        x: 11
         y: 0
-        width: 360
-        height: 360
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b0e484f2905bef20800000000000000
-      internalID: 3452942131407413430
+      spriteID: b8b5d72e48482d1b0800000000000000
+      internalID: -5633294477616653429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_2
+      name: Fireball_Small_2
       rect:
         serializedVersion: 2
-        x: 720
+        x: 22
         y: 0
-        width: 360
-        height: 360
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9d7de90370fc3800800000000000000
-      internalID: 593613627784527259
+      spriteID: 1c1f52420653abbf0800000000000000
+      internalID: -307874937481858623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pizza_Boss_Running_360x360_3
+      name: Fireball_Small_3
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 33
         y: 0
-        width: 360
-        height: 360
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +195,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dfb773999c92f2d0800000000000000
-      internalID: -3246360197962678313
+      spriteID: 2a063ee35d0426520800000000000000
+      internalID: 2693786811748278434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball_Small_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345b5e5a78c212780800000000000000
+      internalID: -8709631243242326717
       vertices: []
       indices: 
       edges: []

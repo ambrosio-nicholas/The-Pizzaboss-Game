@@ -45,6 +45,14 @@ public class PlayerLife : MonoBehaviour
         {
             Die();
         }
+        else if (collision.gameObject.CompareTag("Trap") && Invincibility == false && Health > 1 && Dead == false && PauseMenu.GameIsPaused == false)
+        {
+            Hurt();
+        } 
+        else if (collision.gameObject.CompareTag("Trap") && Invincibility == false && Health <= 1 && Dead == false && PauseMenu.GameIsPaused == false)
+        {
+            Die();
+        }
     }
 
     private void Hurt()
