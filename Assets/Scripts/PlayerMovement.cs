@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
-    private BoxCollider2D collider;
+    private BoxCollider2D playerCollider;
 
     private bool hasControl = true;
     private float dirX = 0f;
@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        collider = GetComponent<BoxCollider2D>();
+        playerCollider = GetComponent<BoxCollider2D>();
     }
 
     private void FixedUpdate()
@@ -76,21 +76,21 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (isCrouching) //Crouching movement
             {
-                if (rb.velocity.x > 0.2f)
+                if (Mathf.Abs(rb.velocity.x) > SprintSpeed) //Limits max speed
+                {
+                    rb.velocity = new Vector2(MoveSpeed * dirX, rb.velocity.y);
+                }
+                else if (rb.velocity.x > 0.1f)
                 {
                     rb.velocity -= new Vector2(Time.deltaTime * friciton, 0f);
                 }
-                else if (rb.velocity.x < -0.2f)
+                else if (rb.velocity.x < -0.1f)
                 {
                     rb.velocity += new Vector2(Time.deltaTime * friciton, 0f);
                 }
-                else if (Mathf.Abs(rb.velocity.x) <= 0.2f) //Makes sure you stop when crouching
+                else if (Mathf.Abs(rb.velocity.x) <= 0.1f) //Makes sure you stop when crouching
                 {
                     rb.velocity = new Vector2(0, rb.velocity.y);
-                }
-                else if (Mathf.Abs(rb.velocity.x) > MoveSpeed) //Limits max speed
-                {
-                     rb.velocity = new Vector2(MoveSpeed, rb.velocity.y);
                 }
             }
             else //Normal Running
@@ -197,17 +197,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Crouch()
     {
-        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && !isWallSliding)
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && !isWallSliding && hasControl)
         {
-            collider.size = smallSizeSize;
-            collider.offset = smallSizeOffset;
+            playerCollider.size = smallSizeSize;
+            playerCollider.offset = smallSizeOffset;
             isCrouching = true;
             gameObject.transform.GetChild(2).transform.localPosition = new Vector2(0f, -0.5f); //Moves the GroundCheck object to correspond with the new collider
         }
         else
         {
-            collider.offset = bigSizeOffset;
-            collider.size = bigSizeSize;
+            playerCollider.offset = bigSizeOffset;
+            playerCollider.size = bigSizeSize;
             isCrouching = false;
             gameObject.transform.GetChild(2).transform.localPosition = new Vector2(0f, -1.16f); //Moves the GroundCheck object to correspond with the new collider
         }

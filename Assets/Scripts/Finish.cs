@@ -14,9 +14,13 @@ public class Finish : MonoBehaviour
     private AudioSource finishSound;
     private AudioSource backgroundMusic;
     private Rigidbody2D rb;
+    private BoxCollider2D playerCol;
     private Animator transitionAnim;
     private Animator playerAnimation;
     private bool audioFade = false;
+
+    private Vector2 bigSizeOffset = new Vector2(-0.03f, -0.086f);
+    private Vector2 bigSizeSize = new Vector2(0.964f, 1.969f);
 
     private void Start()
     {
@@ -25,7 +29,7 @@ public class Finish : MonoBehaviour
         rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         transitionAnim = GameObject.FindWithTag("Transition").GetComponent<Animator>();
         playerAnimation = GameObject.FindWithTag("Player").GetComponent<Animator>();
-        rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+        playerCol = GameObject.FindWithTag("Player").GetComponent<BoxCollider2D>();
         playerCam = GameObject.FindWithTag("PlayerCam").GetComponent<CinemachineVirtualCamera>();
         finishCam = GameObject.FindWithTag("FinishCam").GetComponent<CinemachineVirtualCamera>();
     }
@@ -60,7 +64,11 @@ public class Finish : MonoBehaviour
         finishCam.Priority = 10;
         levelCompleted = true;
         playerAnimation.SetTrigger("finnish");
-        rb.velocity = new Vector2(0, 0);        
+        rb.velocity = new Vector2(0, 0);
+
+        //Just in case you're crouching when you finish
+        playerCol.size = bigSizeSize;
+        playerCol.offset = bigSizeOffset;
     }
 
     private void Update()
