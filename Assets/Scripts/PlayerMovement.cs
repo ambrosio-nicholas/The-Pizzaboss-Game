@@ -49,8 +49,8 @@ public class PlayerMovement : MonoBehaviour
     private float friciton = 8f;
     private Vector2 bigSizeOffset = new Vector2(-0.03f, -0.086f);
     private Vector2 bigSizeSize = new Vector2(0.964f, 1.969f);
-    private Vector2 smallSizeOffset = new Vector2(-0.03f, -0.02f);
-    private Vector2 smallSizeSize = new Vector2(0.964f, 0.98f);
+    private Vector2 smallSizeOffset = new Vector2(-0.03f, -0.12f);
+    private Vector2 smallSizeSize = new Vector2(0.964f, 1.06f);
 
     private enum MovementState { idle, running, jumping, falling , wallSlide , sliding , crouching }
 
