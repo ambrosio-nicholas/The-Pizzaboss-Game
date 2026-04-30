@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
             jumpTimeCounter = jumpTime;
         }
 
-        if (Input.GetKey(KeyCode.Space) && isJumping == true) // Allows higher jumps based on how long you press jump
+        if (Input.GetButton("Jump") && isJumping == true) // Allows higher jumps based on how long you press jump
         {
             if (jumpTimeCounter > 0)
             {
@@ -175,17 +175,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Sprint()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && Mathf.Abs(rb.velocity.x) > WalkSpeed - 0.1f && IsGrounded() && !isWallJumping)
+        if (Input.GetButton("Sprint") && Mathf.Abs(rb.velocity.x) > WalkSpeed - 0.1f && IsGrounded() && !isWallJumping)
         {
             sprintCounter += Time.deltaTime;
             MoveSpeed = RunSpeed;
         }
-        else if(((Input.GetKeyUp(KeyCode.LeftShift) && IsGrounded()) || isWallSliding || Mathf.Abs(rb.velocity.x) < 5f || bigTurnAround) && !isWallJumping)
+        else if(((Input.GetButton("Sprint") && IsGrounded()) || isWallSliding || Mathf.Abs(rb.velocity.x) < 5f || bigTurnAround) && !isWallJumping)
         {
             sprintCounter = 0;
             MoveSpeed = WalkSpeed;
         }
-        if (Input.GetKey(KeyCode.LeftShift) && sprintCounter > holdDownTime && IsGrounded())
+        if (Input.GetButton("Sprint") && sprintCounter > holdDownTime && IsGrounded())
         {
             MoveSpeed = SprintSpeed;
         }
@@ -197,7 +197,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Crouch()
     {
-        if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) && !isWallSliding && hasControl)
+        float dirY = Input.GetAxis("Vertical");
+        if ((dirY < -.5 || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && !isWallSliding && hasControl)
         {
             playerCollider.size = smallSizeSize;
             playerCollider.offset = smallSizeOffset;
